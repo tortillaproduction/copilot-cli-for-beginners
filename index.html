@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReviewPilot - Find the best products, faster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">Review<span class="logo-accent">Pilot</span></div>
+            <nav class="nav">
+                <a href="#" class="nav-link">Reviews</a>
+                <a href="#" class="nav-link">Categories</a>
+                <a href="#" class="nav-link">Top Rated</a>
+            </nav>
+            <div class="search-bar">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input type="text" placeholder="Search products, brands, categories" class="search-input">
+            </div>
+            <div class="header-icons">
+                <button class="icon-button">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                </button>
+                <button class="icon-button">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Find the best products, faster.</h1>
+            <p class="hero-subtitle">Expert summaries, real user feedback, and side-by-side comparisons.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Browse Top Reviews</button>
+                <button class="btn btn-secondary">Compare Products</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">10,000+</span>
+                    <span class="stat-label">reviews</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">Updated</span>
+                    <span class="stat-label">weekly</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">Transparent</span>
+                    <span class="stat-label">scoring</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main">
+        <aside class="sidebar">
+            <div class="filter-section">
+                <h3 class="filter-title">Filter & Sort</h3>
+
+                <div class="filter-group">
+                    <label class="filter-label">Sort by</label>
+                    <select class="filter-select">
+                        <option>Best overall</option>
+                        <option>Highest rated</option>
+                        <option>Most reviews</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Minimum Rating</label>
+                    <div class="rating-filter">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="rating-text">up</span>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Price Range</label>
+                    <div class="price-range">
+                        <input type="text" class="price-input" placeholder="Min $">
+                        <span class="price-separator">to</span>
+                        <input type="text" class="price-input" placeholder="Max $">
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Category</label>
+                    <div class="checkbox-list">
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span>Laptops</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span>Headphones</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span>Smart Home</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span>Kitchen</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span>Fitness</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span>Gaming</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="search-review">
+                    <input type="text" placeholder="Read review..." class="review-search">
+                    <svg class="search-icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="btn btn-primary btn-full">Apply</button>
+                    <button class="btn btn-reset">Reset</button>
+                </div>
+            </div>
+        </aside>
+
+        <div class="content">
+            <div class="results-header">
+                <div class="results-info">
+                    <span class="results-count">Showing 24 results</span>
+                    <div class="filter-chips">
+                        <span class="chip">
+                            <span class="star">★</span> 4 × up <button class="chip-remove">×</button>
+                        </span>
+                        <span class="chip">
+                            <span class="folder-icon">📁</span> Laptops <button class="chip-remove">×</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="view-controls">
+                    <button class="view-toggle grid-view active" title="Grid view">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                        </svg>
+                    </button>
+                    <button class="view-toggle list-view" title="List view">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <line x1="8" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2"></line>
+                            <line x1="8" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2"></line>
+                            <line x1="8" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2"></line>
+                            <circle cx="3" cy="6" r="1.5" fill="currentColor"></circle>
+                            <circle cx="3" cy="12" r="1.5" fill="currentColor"></circle>
+                            <circle cx="3" cy="18" r="1.5" fill="currentColor"></circle>
+                        </svg>
+                    </button>
+                    <button class="btn btn-primary compare-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 12l2 2 4-4"></path>
+                        </svg>
+                        Compare (0) <span class="arrow">›</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product Card 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150'%3E%3Crect fill='%23f0f0f0' width='200' height='150'/%3E%3Crect x='30' y='40' width='140' height='90' fill='%23d4a574' rx='5'/%3E%3Crect x='30' y='130' width='140' height='10' fill='%23999'/%3E%3C/svg%3E" alt="ArcLight X15 Laptop">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">ArcLight X15 Laptop</h3>
+                        <p class="product-brand">Zyrella <span class="separator">•</span> <span class="product-category">Laptops</span></p>
+                        <div class="product-rating">
+                            <span class="rating-score">4.7</span>
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">1,205 reviews</span>
+                        </div>
+                        <p class="product-summary">Excellent performance and build quality, but battery life is average.</p>
+                        <div class="product-tags">
+                            <span class="tag positive">Fast performance</span>
+                            <span class="tag positive">High-res display</span>
+                            <span class="tag negative">Pugtores 3</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <div class="product-price">$1,199</div>
+                        <div class="product-status">
+                            <span class="status-badge in-stock">✓ In Store</span>
+                        </div>
+                        <button class="btn btn-primary btn-full">Read Review →</button>
+                    </div>
+                </article>
+
+                <!-- Product Card 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150'%3E%3Crect fill='%23f0f0f0' width='200' height='150'/%3E%3Ccircle cx='100' cy='75' r='40' fill='%23444'/%3E%3Ccircle cx='100' cy='75' r='35' fill='%23555'/%3E%3Ccircle cx='100' cy='75' r='15' fill='%23666'/%3E%3C/svg%3E" alt="Lumina Smart Speaker">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Lumina Smart Speaker</h3>
+                        <p class="product-brand">Sonira <span class="separator">•</span> <span class="product-category">Smart Home</span></p>
+                        <div class="product-rating">
+                            <span class="rating-score">4.5</span>
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">992 reviews</span>
+                        </div>
+                        <p class="product-summary">Rich sound quality and easy setup, but lacks some app integrations.</p>
+                        <div class="product-tags">
+                            <span class="tag positive">Rich sound</span>
+                            <span class="tag positive">Easy setup</span>
+                            <span class="tag negative">No voce profiles</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <div class="product-price">$129</div>
+                        <div class="product-status">
+                            <span class="status-badge in-stock">✓ In Store</span>
+                        </div>
+                        <button class="btn btn-primary btn-full">Read Review →</button>
+                    </div>
+                </article>
+
+                <!-- Product Card 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 150'%3E%3Crect fill='%23f0f0f0' width='200' height='150'/%3E%3Crect x='45' y='30' width='110' height='100' fill='%23333' rx='8'/%3E%3Crect x='50' y='35' width='100' height='60' fill='%23555' rx='5'/%3E%3Crect x='80' y='100' width='40' height='25' fill='%23444' rx='3'/%3E%3C/svg%3E" alt="BreezeBlend Air Fryer">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">BreezeBlend Air Fryer</h3>
+                        <p class="product-brand">Airviva <span class="separator">•</span> <span class="product-category">Kitchen</span></p>
+                        <div class="product-rating">
+                            <span class="rating-score">4.6</span>
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">617 reviews</span>
+                        </div>
+                        <p class="product-summary">Great for quick, healthy meals, but smell capacity.</p>
+                        <div class="product-tags">
+                            <span class="tag positive">Small capacity</span>
+                            <span class="tag negative">Gets hot outside</span>
+                            <span class="tag negative">Pugulorek: 1</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <div class="product-price">$89</div>
+                        <div class="product-status">
+                            <span class="status-badge in-stock">✓ In Store</span>
+                        </div>
+                        <button class="btn btn-primary btn-full">Read Review →</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

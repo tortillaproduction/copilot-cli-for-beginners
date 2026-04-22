@@ -1,0 +1,20 @@
+[
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "year": 1925,
+    "read": false
+  },
+  {
+    "title": "Book",
+    "author": "Author",
+    "year": 0,
+    "read": false
+  },
+  {
+    "title": "Test Book",
+    "author": "Test Author",
+    "year": 2024,
+    "read": false
+  }
+]
